@@ -1,6 +1,6 @@
 ## GEEKFESTIA-2021
 
-#### This repository contains a Data Analysis on a weather dataset created using Jypter Notebook.
+#### This repository contains a Data Analysis on a weather dataset created using Jupyter Notebook.
 #### The weather dataset contains the following columns:- **year, month, day, hour, PM2.5(Particulate matter), temperature, pressure, rain, wind_direction, wind_speed.**  <p>
   <em> Pariculate matter :- PM stands for particulate matter (also called particle pollution): the term for a mixture of solid particles and liquid droplets found in the                             air. Some particles, such as dust, dirt, soot, or smoke, are large or dark enough to be seen with the naked eye. <p>
    Temperature :- Temperature is a degree of hotness or coldness the can be measured using a thermometer. <p>

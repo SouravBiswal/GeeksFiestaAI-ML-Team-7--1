@@ -25,6 +25,9 @@ Our main aim is to perform data cleaning, data normalizing, testing the hypothes
    
 #### 2. Reading the dataset : <p>
         pd.read_csv('train.csv')
+  * There are 31527 samples in the dataset.
+  * All the Columns have a few NaN values.
+  * Wind Direction is a categorical data with 16 categories representing various directions.
 
 #### 3. Cleaning and Processing the Dataset : <p>
    We first convert all the numeric data from object data-type to float/int data-type, then we remove all the null values so that we can perform our analysis in the later stage. As we're given the date and time spread across four different columns, we tried to simplify them into a single column using this code. <p>
@@ -33,8 +36,4 @@ Our main aim is to perform data cleaning, data normalizing, testing the hypothes
            df.drop(columns=['year', 'month', 'day', 'hour'], inplace = True)
              
  Also we found some anomalies and corrected them after analysing the neighbours of such cells manually (we've put a comment on those lines so the reader can identify them easily).
-After performing the cleaning, we've exported the given dataset to a fresh dataset as Clean_Data.csv so that we can perform our analysis productively.             
-          
-  
-  
-
+After performing the cleaning, we've exported the given dataset to a fresh dataset as Clean_Data.csv so that we can perform our analysis productively. 

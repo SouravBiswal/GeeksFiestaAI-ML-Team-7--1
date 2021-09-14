@@ -31,6 +31,10 @@ Our main aim is to perform data cleaning, data normalizing, testing the hypothes
       
            df['Date'] = pd.to_datetime(df.day.astype(str) + "-" + df.month.astype(str) + "-" + df.year.astype(str) + " " + df.hour.astype(str) + ":00:00") <p>
            df.drop(columns=['year', 'month', 'day', 'hour'], inplace = True)
+             
+ Also we found some anomalies and corrected them after analysing the neighbours of such cells manually (we've put a comment on those lines so the reader can identify them easily).
+After performing the cleaning, we've exported the given dataset to a fresh dataset as Clean_Data.csv so that we can perform our analysis productively.             
+          
   
   
 

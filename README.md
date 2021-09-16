@@ -34,4 +34,7 @@ Our main aim is to perform data cleaning, data normalizing, testing the hypothes
    * Exported the cleaned data as Clean_Data.csv. 
  _________________________________________________________________________________________________________________________________________________________________________
 
-### DAY-3
+### DAY-3 and DAY-4
+   * Visualization of features using various graphs using matplotlib and seaborn.
+   * Explained the observations from the graphs briefly.
+   * Plotted the co-relation using heatmap.

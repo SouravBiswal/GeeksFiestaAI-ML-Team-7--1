@@ -38,3 +38,9 @@ Our main aim is to perform data cleaning, data normalizing, testing the hypothes
    * Visualization of features using various graphs using matplotlib and seaborn.
    * Explained the observations from the graphs briefly.
    * Plotted the co-relation using heatmap.
+__________________________________________________________________________
+
+### DAY-5 and DAY-6
+   * Prediction of PM2.5 using various models.
+   * Tried ARIMA and VAR models, but both models failed to give satisfactory results.
+   * So, atlast we had to use Random Forest Regressor.

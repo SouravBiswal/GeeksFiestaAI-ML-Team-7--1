@@ -44,3 +44,7 @@ __________________________________________________________________________
    * Prediction of PM2.5 using various models.
    * Tried ARIMA and VAR models, but both models failed to give satisfactory results.
    * So, atlast we had to use Random Forest Regressor.
+ ### DAY-7, DAY-8 and DAY-9
+   * Successfully deployed our model.
+ _______________________________________________________________________________________________
+ ### *You can access our model using this link* -https://air-quality-prediction-gfg.herokuapp.com/

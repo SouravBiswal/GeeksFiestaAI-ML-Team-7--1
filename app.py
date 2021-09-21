@@ -14,7 +14,7 @@ def welcome():
     return render_template('GeeksFiesta.html')
 
 
-@app.route('/predict', methods = ['POST'])
+@app.route('/', methods = ['POST'])
 def predict():
     
     # year = float(request.form['Year'])

@@ -1,0 +1,39 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #9bfcec;
+    font: Times;
+    font-size: 18;
+    line-height: 20px;
+    margin:15px;
+
+}
+
+.Page-title{
+    background-color: rgb(1, 20, 48);
+    padding: 20px 10px;
+    border: 3px rgb(0, 51, 106) solid;
+}
+
+.Title-text{
+    color: blue;
+}
+
+.Container{
+    background-color: rgb(187, 187, 222);
+    margin: 2px;
+    padding: 25 px;
+}
+
+.Container-title{
+    padding: 25px;
+}
+
+.Input-data{
+    background-color: rgb(138, 138, 227);
+    margin: 15px;
+}

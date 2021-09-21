@@ -4,74 +4,76 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
     <title>My website</title>
-    <link rel="stylesheet" type = "text/css" href="Style.css">
+    <link rel="stylesheet" type = "text/css" href="{{ url_for('static', filename = 'css/style.css') }}">
 </head>
 <body>
     <header class="Page-title">
-        <h1>GeeksFiesta</h1>
+        <h1 class = "Title-text">GeeksFiesta</h1>
         <!-- <small>Date</small> -->
     </header>
-    <div class="Data">    
-        <div class = "box">
-            <h1>Prediction Of Particulate Matter(PM2.5)</h1>
-            <form action = {{ url_for('predict')}} method = 'post'>
+    <div class="Container">    
+            <h1 class = "Container-title">Prediction Of Particulate Matter(PM2.5)</h1>
 
-                <!-- year	month	day	hour	temperature	pressure	rain	wind_direction	wind_speed	PM2.5 -->
+            <div class = "input-data">
 
-                <label for="Year">Year</label>
-                <input type="text", value = 0, = "Year", name="Year"><br><br>
-                
-                <label for="Month">Month</label>
-                <input type="text", value="0", id = "Month", name="Month"><br><br>
-                
-                <label for="Day">Day</label>
-                <input type="text", value="0", id = "Day", name="Day"><br><br>
-                
-                <label for="Hour">Hour</label>
-                <input type="text", value="0", id = "Hour", name="Hour"><br><br>
+                <form action = {{ url_for('predict')}} method = 'post'>
 
-                <label for="Temperature">Temperature</label>
-                <input type="text", value="0", id = "Temperature", name="Temperature"><br><br>
+                    <!-- year	month	day	hour	temperature	pressure	rain	wind_direction	wind_speed	PM2.5 -->
+                    <label for="Year">Year</label>
+                    <input type="text", value = 0, = "Year", name="Year"><br><br>
+                    
+                    <label for="Month">Month</label>
+                    <input type="text", value="0", id = "Month", name="Month"><br><br>
+                    
+                    <label for="Day">Day</label>
+                    <input type="text", value="0", id = "Day", name="Day"><br><br>
+                    
+                    <label for="Hour">Hour</label>
+                    <input type="text", value="0", id = "Hour", name="Hour"><br><br>
 
-                <label for="Pressure">Pressure</label>
-                <input type="text", value="0", id = "Pressure", name="Pressure"><br><br>
+                    <label for="Temperature">Temperature</label>
+                    <input type="text", value="0", id = "Temperature", name="Temperature"><br><br>
 
-                <label for="Rain">Rain</label>
-                <input type="text", value="0", id = "Rain", name="Rain"><br><br>
+                    <label for="Pressure">Pressure</label>
+                    <input type="text", value="0", id = "Pressure", name="Pressure"><br><br>
 
-                <label for="Wind_Speed">Wind_Speed</label>
-                <input type="text", value="0", id = "Wind_Speed", name="Wind_Speed"><br><br>
+                    <label for="Rain">Rain</label>
+                    <input type="text", value="0", id = "Rain", name="Rain"><br><br>
+
+                    <label for="Wind_Speed">Wind_Speed</label>
+                    <input type="text", value="0", id = "Wind_Speed", name="Wind_Speed"><br><br>
 
 
-                <label for="Wind_Direction">Wind_Direction</label>
-                <select id="Wind_Direction">
-                    <option value="NNE">North-North-East</option><br>
-                    <option value="NE">North-East</option><br>
-                    <option value="NEE">North-East-East</option><br>
-                    <option value="E">East</option><br>
-                    <option value="SEE">South-East-East</option><br>
-                    <option value="SSE">South-South-East</option><br>
-                    <option value="SE">South-East</option><br>
-                    <option value="S">South</option><br>
-                    <option value="SSW">South-South-West</option><br>
-                    <option value="SW">South-West</option><br>
-                    <option value="SWW">South-West-West</option><br>
-                    <option value="W">West</option><br>
-                    <option value="NWW">North-West-West</option><br>
-                    <option value="NW">North-West</option><br>
-                    <option value="NNW">North-North-West</option><br>
-                    <option value="N">North</option><br>   
-    
-                </select><br><br>
+                    <label for="Wind_Direction">Wind_Direction</label>
+                    <select id="Wind_Direction">
+                        <option value="NNE">North-North-East</option><br>
+                        <option value="NE">North-East</option><br>
+                        <option value="NEE">North-East-East</option><br>
+                        <option value="E">East</option><br>
+                        <option value="SEE">South-East-East</option><br>
+                        <option value="SSE">South-South-East</option><br>
+                        <option value="SE">South-East</option><br>
+                        <option value="S">South</option><br>
+                        <option value="SSW">South-South-West</option><br>
+                        <option value="SW">South-West</option><br>
+                        <option value="SWW">South-West-West</option><br>
+                        <option value="W">West</option><br>
+                        <option value="NWW">North-West-West</option><br>
+                        <option value="NW">North-West</option><br>
+                        <option value="NNW">North-North-West</option><br>
+                        <option value="N">North</option><br>   
         
-                <input type="submit" value = "submit">
-            </form>
+                    </select><br><br>
+            
+                    <input type="submit" value = "submit">
+                </form>
+            </div>
 
+    </div>
 
-        </div>
-    </div><br><br>
+    <div class = "Output-Data">
     {{Output_displayed}}
-
+    </div>
 
 </body>
 </html>

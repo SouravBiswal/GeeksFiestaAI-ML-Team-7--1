@@ -44,10 +44,3 @@ __________________________________________________________________________
    * Prediction of PM2.5 using various models.
    * Tried ARIMA and VAR models, but both models failed to give satisfactory results.
    * So, atlast we had to use Random Forest Regressor.
-___________________________________________________________________________
-### Day 8-10
-   * Created Web Application using Flask Framework.
-   * Deployed the Model using Heroku
-   * The model got deployed successfully, but doesn't run.
-   * Link to the web-application- https://air-quality-prediction-gfg.herokuapp.com/
-

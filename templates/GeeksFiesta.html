@@ -14,7 +14,7 @@
     <div class="Data">    
         <div class = "box">
             <h1>Prediction</h1>
-            <form action = '/submit', method = 'POST'>
+            <form action = {{ url_for('submit')}} method = 'POST'>
 
                 <!-- year	month	day	hour	temperature	pressure	rain	wind_direction	wind_speed	PM2.5 -->
 

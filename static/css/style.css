@@ -1,3 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Koh+Santepheap:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Grechen+Fuemen&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway&family=Roboto+Mono:ital,wght@0,100;1,300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital@1&display=swap');
+
 *{
     margin: 0px;
     padding: 0px;
@@ -5,35 +17,77 @@
 }
 
 body{
-    background-color: #9bfcec;
-    font: Times;
-    font-size: 18;
-    line-height: 20px;
-    margin:15px;
-
+    font-family: 'Montserrat', sans-serif;
 }
 
 .Page-title{
-    background-color: rgb(1, 20, 48);
+    background-color: #00801e;
     padding: 20px 10px;
-    border: 3px rgb(0, 51, 106) solid;
+    align-items: center;
+    border-radius: 4px;
 }
 
 .Title-text{
-    color: blue;
+    color: rgb(255, 255, 255);
+    align-self: center;
+    text-align: center;
+    font-family: Santepheap;
 }
 
 .Container{
-    background-color: rgb(187, 187, 222);
+    background-color: rgb(106, 198, 96);
     margin: 2px;
-    padding: 25 px;
+    padding: 15 px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    padding-bottom: 22px;
 }
 
 .Container-title{
-    padding: 25px;
+    padding: 10px;
+    text-align: center;
+    font-size: 25px;
+    font-family: Raleway;
 }
 
 .Input-data{
-    background-color: rgb(138, 138, 227);
+    background-color: rgb(214, 214, 220);
     margin: 15px;
+    padding:15px;
+    border-radius: 8px;
+}
+
+.form{
+    text-align: justify;
+}
+
+
+.form_label{
+    font-family: Playfair Display;
+    font-weight: 200;
+    font-stretch: expanded;
+}
+
+
+.button {
+    position: relative;
+    background-color: #00801e;
+    border: none;
+    font-size: 15px;
+    color: #FFFFFF;
+    padding: 10px;
+    width: 100px;
+    text-align: center;
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.Output-Data{
+    text-align: center;
+    font-family: Rubik;
+    font-size: 20px;
+
 }

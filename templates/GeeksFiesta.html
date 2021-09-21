@@ -8,18 +8,18 @@
 </head>
 <body>
     <header class="Page-title">
-        <h1>First HTML5 website.</h1>
-        <small>Date</small>
+        <h1>GeeksFiesta</h1>
+        <!-- <small>Date</small> -->
     </header>
     <div class="Data">    
         <div class = "box">
-            <h1>Prediction</h1>
-            <form action = {{ url_for('submit')}} method = 'POST'>
+            <h1>Prediction Of Particulate Matter(PM2.5)</h1>
+            <form action = {{ url_for('predict')}} method = 'post'>
 
                 <!-- year	month	day	hour	temperature	pressure	rain	wind_direction	wind_speed	PM2.5 -->
 
                 <label for="Year">Year</label>
-                <input type="text", value="0", id = "Year", name="Year"><br><br>
+                <input type="text", value = 0, = "Year", name="Year"><br><br>
                 
                 <label for="Month">Month</label>
                 <input type="text", value="0", id = "Month", name="Month"><br><br>

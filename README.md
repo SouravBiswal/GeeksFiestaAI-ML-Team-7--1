@@ -48,3 +48,8 @@ __________________________________________________________________________
    * Successfully deployed our model.
  _______________________________________________________________________________________________
  ### *You can access our model using this link* -https://air-quality-prediction-gfg.herokuapp.com/
+ 
+#### Contributors- 
+ * https://github.com/aryan7781
+ * https://github.com/SouravBiswal
+                   
